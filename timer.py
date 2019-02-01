@@ -58,6 +58,8 @@ def log_time(args):
     print("Activity: %s" % args.activity)
     print("Project: %s" % args.project)
 
+    start = getNow()
+
     stop = None
 
     timing = True
@@ -191,7 +193,6 @@ def tally(args):
 
 
 def main():
-    start = getNow()
     args = getArgs()
 
     if args.subparser_name == 'time':
